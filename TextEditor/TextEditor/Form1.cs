@@ -22,11 +22,6 @@ namespace TextEditor
             this.KeyPreview = true;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-        }
-
         private string ReturnMessageFromFormat(string type)
         {
             switch (type)
