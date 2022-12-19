@@ -105,28 +105,8 @@ namespace TextEditor
             {
                 File.WriteAllText(path = saveFileDialog1.FileName, textBox1.Text);
             }
-
-            /*saveFileDialog1.FileName = openFileDialog1.FileName;
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    var writer = new StreamWriter(
-                        saveFileDialog1.FileName, false, Encoding.GetEncoding(1251));
-                    writer.Write(textBox1.Text);
-                    writer.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-            }*/
         }
 
-        /*private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            textBox1.Font = new Font("Calibri", (float)numericUpDown1.Value);
-        }*/
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
